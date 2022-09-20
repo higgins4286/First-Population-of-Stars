@@ -1,0 +1,107 @@
+\documentclass[11pt,twoside]{article}
+\usepackage{./asp2014}
+
+\aspSuppressVolSlug
+\resetcounters
+
+\bibliographystyle{asp2014}
+
+\markboth{Higgins, Schauer, and Bromm}{NIRCB Luminosity}
+
+\begin{document}
+
+\title{21cm Cosmology and the Cosmic Near Infrared Background}
+\author{Lauren Higgins$^{1,2}$, Anna T. P. Schauer$^{2,3}$, and Volker Bromm$^2$\\
+\affil{$^1$Department of Physics and Astronomy, University of Missouri, Kansas City, MO 64110, USA; \email{lahn7d@mail.umkc.edu}}
+\affil{$^2$Department of Astronomy, University of Texas, Austin, TX 78712, USA}
+\affil{$^3$Hubble Fellow}}
+
+\begin{abstract}
+Population~III (Pop~III) stars are the first luminous objects to emerge after the cosmic dark ages, possibly contributing to the near-IR cosmic background (NIRCB). No direct observations of these first stars have yet been made, so we rely on indirect measurements such as those provided by 21\,cm cosmology. Our Pop~III star formation rate density is consistent with the recent detection of the global 21\,cm absorption from neutral hydrogen, implying that the signal originates in the redshift range $15 \le z \le 20$. We find that the predicted Pop~III star formation rate densities are insufficient to account for the current upper limits on the NIRCB. Pop~II stars or some other Ly$\alpha$ producing sources could thus contribute to the unresolved fraction of the NIRCB.
+\end{abstract}
+
+\section{Introduction}
+
+The Near Infrared Cosmic Background (NIRCB) is the cumulative signal from star formation throughout time. The
+unresolved part of the NIRCB signal might have originated in Ly$\alpha$ photons from hydrogen gas excited by 
+Population~III (Pop~III) stellar UV radiation, eventually redshifted to longer wavelengths. These stars have 
+yet to be directly observed. Therefore, we rely on indirect measurements, such as the global 21\,cm 
+absorption signal detected by the Experiment to Detect the Global EoR Signature (EDGES; Bowman et al. 2018), 
+in conjunction with other constraints, such as the NIRCB. We here investigate the combined constraint from 
+the 21\,cm and NIRCB observations, thus assessing whether they are consistent.
+
+\section{Methodology}
+We start by calculating the near-IR intensity, $J_{\rm NIR}$, originating from first star formation. This radiation was originally emitted at the rest-frame wavelength of Ly$\alpha$ photons at 1215.67\,\AA \, the transition from the first excited state to the ground state of neutral hydrogen, but has been redshifted to longer wavelengths as the universe expands (Pritchard et al. 2012). Now located in the near-IR band, its total strength is (Greif et al. 2006):
+\begin{equation}
+J_\mathrm{NIR} \approx \frac{hc}{4\pi m_{\rm H}} \eta_{\rm ion} \int_{z_\mathrm{Pop\,III}}^{30}   \Psi_{\star}(z) \left|\frac{dt}{dz}\right| dz
+\mbox{\ ,}
+\end{equation}
+where we have restricted the redshift range to only extend over the epoch of Pop~III star formation. As upper limit for the integration we choose $z=30$, to reflect the onset of Pop~III star formation (Kashlinsky et al. 2005), and explore select redshifts z$_\mathrm{Pop\,III}$ as lower limit. Here, $\mathrm{\eta_{\rm ion}}$ is the ratio of ionized photons to stellar baryons, as derived in 
+Greif et al. (2006), $h$ is Planck's Constant, $c$ the speed of light, and $\Psi_{\star}(z)$ the star formation rate density as a function of redshift per comoving volume. We derive the expression for $|dt/dz|$ from the matter-dominated Friedmann equation, using cosmological parameters $H_0=67.8$\,km\,s$^{-1}$\,Mpc$^{-1}$ and $\Omega_{m} = 1 - \Omega_{\Lambda} = 0.31$. Finally, we employ the number of ionizing photons per stellar baryon for Pop~III stars, $\mathrm{\eta_{ion}^{III}}$ = 9$\times$10$^{4}$, suggested in Greif et al. (2006). 
+
+\section{Results}
+\subsection{Time-independent Star Formation Model}
+We study $J_\mathrm{NIR}$ as a function of redshift to assess how the radiation background builds up over time, first under the idealized assumption of a constant $\Psi_{\star}$. In Figure~1, we show the NIRCB for star formation rate densities of $\Psi_{\star}$ = $10^{-3}$, $10^{-4}$, and $10^{-5}$ M$\mathrm{_{\odot}}$ yr$^{-1}$ cMpc$^{-3}$, respectively. 
+We explore how $J_\mathrm{NIR}$ changes depending on the end of Pop~III star formation, here ranging between
+5 $\leq$ z $\leq$ 8. Compared to the upper limit from measurements of the NIRCB by Kashlinsky et al. (2005), where $J_\mathrm{NIR}$ is approximately 0.1\,nW\,m$^{-2}$\,sr$^{-1}$, our maximum values are at least an order of magnitude lower (see also Helgason et al. 2016). Specifically, within our modeling, maximum NIRCB values for each $\Psi_{\star}$ are: 1.4$\times$10$^{-2}$, 1.4$\times$10$^{-3}$, and 1.4$\times$10$^{-4}$ nW 
+m$^{-2}$ sr$^{-1}$, respectively.
+
+\articlefigure[width=1.0\textwidth]{images/Jnir_vs_z_subplot.pdf}{ex_fig1}{Total $J_\mathrm{NIR}$ amplitude from Pop~III stars. All models assume that stars begin to form at $z = 30$, and terminate their formation at redshifts between $z=5$ and $z=8$. {\it From left to right:} We consider star 
+formation rate densities of $\Psi_{\star}=10^{-3}$, $10^{-4}$, and $10^{-5}$ M$_\mathrm{\odot}$ yr$^{-1}$ 
+cMpc$^{-3}$, respectively.}
+
+\subsection{Time-dependent Model}
+We also study two different time-dependent Pop~III star formation rate density (SFRD) models. The SFRD from Schauer et al. (2019) is a semi-analytic model that is designed to reproduce the absorption redshift inferred from the EDGES signal. In addition, we consider the SFRD data from the 
+cosmological simulation by Jaacks et al. (2018). Both models are reproduced for convenience in Figure~2. We again calculate 
+the resulting $J_\mathrm{NIR}$ for these two $\Psi_{\star}$(z) models, presenting them in Figure~3. For comparison, we include the observed $J_\mathrm{NIR}$ from the COBE/DIRBE K band at 2.2 microns, and the Spitzer/IRAC channel 1 at 3.6 microns. All of our models produce a NIRCB amplitude below the $0.1$\,nW\,m$^{-2}$\,sr$^{-1}$ empirical upper limit. 
+
+\articlefigure[width=.55\textwidth]{images/popIII_sfr_s2_skx_with_best_fit.pdf}{ex_fig2}{Pop~III star formation rate densities $\Psi_{\star}$(z): from Schauer et al. (2019; {\it green}), and Jaacks et al. (2018; {\it magenta}). In addition, the constant star formation rate densities explored here are shown: $\Psi_{\star}$ = 
+$10^{-3}$, $10^{-4}$, $10^{-5}$ M$_\mathrm{\odot}$ yr$^{-1}$\,cMpc$^{-1}$.}
+
+\subsection{Pop~II stars and the importance of $\eta_{\rm ion}$}
+We further consider the Pop~II SFRD from Jaacks et al. (2018) to evaluate the $J_{\rm NIR}$ contribution from this second stellar population. For the Jaacks et al. (2018) Pop~II model with UV efficiency of $\eta_{\rm ion}=4\times 10{^3}$, we find $J_{\rm NIR}\approx 6\times 10^{-3}$. If we choose a higher-mass dominated Pop~II model where $\eta_{\rm ion}=3\times 10{^4}$, we find $J_{\rm NIR} \approx 
+5\times 10^{-2}$. We conclude that the value of $\eta_{\rm ion}$ in Equation~1 strongly impacts the resulting $J_{\rm NIR}$, being able to change the NIRCB amplitude by several orders of magnitude. This is illustrated in Figure~3 with the Jaacks et al. (2018) models. Our values for $\eta_{\rm ion}$ are taken from Greif et al. (2006), and reflect their Pop~II and Pop~II.5 values of $\eta_{\rm ion}\simeq 4\times 10 {^3}$  and $3\times 10{^4}$, respectively. Given that Pop~II begins to dominate the SFRD in the Jaacks et al. (2018) simulation when $z < 20$, the chosen Pop~II value for $\eta_{\rm ion}$ determines the resulting $J_{\rm NIR}$ amplitude. The Schauer et al. (2019) Pop~II model ends at $z=14.5$ and includes a 1\%
+Pop~II star formation efficiency that is insufficient to
+significantly contribute to the overall $J_{\rm NIR}$. It is approximately three orders of magnitude less than for the Jaacks et al. (2018) Pop~II models. We conclude that $\eta_{\rm ion}$ is a key parameter that would benefit from a more complete exploration.  
+
+\articlefigure[width=.65\textwidth]{images/Jnir_vs_z_Yz_fcn_bands_popIIii_eta2.pdf}{ex_fig3
+}{$J_\mathrm{NIR}$ integrated over redshift for time-dependent SFRD models. {\it Red line:} Kashlinsky et al. (2005) empirical upper limit of 0.1~nW m$^{-2}$ sr$^{-1}$. {\it Green and black stars:} Redshift observed in those bands. {\it Yellow lines:} Jaacks et al. (2018) Pop~II models for different $\eta_{\rm ion}$ values. {\it Pink line:} Jaacks et al. (2018) Pop~III model. {\it Green and blue 
+dashed lines:} Schauer et al. (2019) Pop~II and Pop~III models.}
+
+\section{Conclusion and Outlook}
+
+All our models fall below the observed $J_\mathrm{NIR}$, and therefore there is no tension between the 21\,cm signal and the observed NIRCB. Furthermore, the cumulative contribution from Pop~III stars is not sufficient to account for the unresolved NIRCB, differing from the empirical value derived by Kashlinsky et al. (2005) by two orders of magnitude. We find that the UV production efficiency, $\eta_{\rm ion}$, is a crucial parameter that both changes the value of $J_\mathrm{NIR}$ by an order of magnitude, from 4.6$\times$10$^{-2}$ nW m$^{-2}$ 
+sr$^{-1}$ to 6.1$\times$10$^{-3}$ nW m$^{2}$ sr$^{-1}$, and determines the redshift where Pop~II stars start to dominate the NIRCB. 
+
+We will continue this work through two avenues: (1) including another energy band
+to make our results more robust, and (2) using more detailed spectral modeling. E.g., Santos et al. (2002) consider the re-processing of Ly$\alpha$ photons in the intergalactic medium. Greatly improved future observations, such as those possible with the Euclid mission set to launch in the 2020s, 
+will provide tighter limits on the NIRCB, allowing us to better constrain models. Additionally, observations with the upcoming {\it James Webb Space Telescope} will resolve the NIRCB to disentangle Pop~III from Pop~II star formation.
+
+%\clearpage
+
+\acknowledgements We acknowledge support from the UT Austin Astronomy Department REU Program funded by NSF
+grant AST-1757983 (PI: Jogee) as part of the NSF REU and DOD ASSURE programs. A. S. was supported by NASA 
+through the Hubble Fellowship grant HST-HF2-51418.001-A, awarded by STScI, which is operated by AURA, 
+under contract NAS5-26555.
+
+\begin{thebibliography}{}
+\bibitem[Bowman et al. 2018]{ex_1}
+Bowman J. D., et al. 2018, Nature, 555, 67 
+\bibitem[Greif et al. 2006]{ex_2}
+Greif T. H., Bromm V., 2006, MNRAS, 373, 128
+\bibitem[Helgason et al. 2016]{ex_3}
+Helgason K., Ricotti M., Kashlinsky A., Bromm V., 2016, MNRAS, 455, 282
+\bibitem[Jaacks et al. 2019]{ex_4}
+Jaacks J., Finkelstein S. L., Bromm V., 2019, MNRAS, 488, 2202
+\bibitem[Kashlinsky et al. 2005]{ex_5}
+Kashlinsky A., Arendt R. G., Mather J., Moseley S. H., 2005, Nature, 438, 45 
+\bibitem[Pritchard et al. 2012]{ex_6}
+Pritchard J. R., Loeb A., 2012, Rep. Prog. Phys., 75, 086901 
+\bibitem[Santos et al. 2002]{ex_7}
+Santos M. R.., Bromm V., Kamionkowski M., 2002, MNRAS, 336, 1082
+\bibitem[Schauer et al. 2019]{ex_8}
+Schauer A. T. P., Liu B., Bromm V., 2019, ApJ, 877, L5
+
+\end{thebibliography}
+
+\end{document}
