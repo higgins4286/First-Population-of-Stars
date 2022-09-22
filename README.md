@@ -1,6 +1,7 @@
 #First-Population-of-Stars
 
-The files contained within this repository are .py that calculate and visualize the intensity of light emitted from the first population of stars. They utilize three different wavelengths:
+The files contained within this repository are .py that calculate and visualize the intensity of light emitted from the first population of stars. 
+They utilize three different wavelengths:
 
 Spectra_NIR_quad
 <ul>
